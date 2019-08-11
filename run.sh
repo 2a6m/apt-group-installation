@@ -50,7 +50,7 @@ function ask(){
 	then
 		while IFS= read -r line
 		do
-			[[ "$line" =~ ^#.*$ ]] || softwares+=("$line")
+			[[ "$line" =~ ^#.*$ ]] || [ -z "$line" ] ||  softwares+=("$line")
 		done < "${map[$file]}";
 	else
 		echo -e "${red}[error]${nc} Please try again"
