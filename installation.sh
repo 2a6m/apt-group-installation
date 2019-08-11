@@ -58,7 +58,7 @@ function ask(){
 	fi
 
 	echo "${softwares[@]}"
-	#apt install ${softwares[@]}
+	apt install ${softwares[@]}
 }
 
 # === Script ===
@@ -77,10 +77,13 @@ load
 # update and upgrade
 echo ""
 echo -e "${green}[update]${nc} updating the repositories"
-#apt -yq update >> /dev/null
+apt -yq update >> /dev/null
 echo -e "${green}[update]${nc} upgrading the softwares"
-#apt -yq upgrade >> /dev/null
+apt -yq upgrade >> /dev/null
 
 ask
+
+# delete file all (owner is root)
+rm $path/all.txt
 
 exit
