@@ -27,3 +27,8 @@ Configure each of your package group by editing files in list directory to have 
 * each line must contain the name of **1** package
 * The script doesn't read commented lines
 * The script will generate a group with all the packages (the group all)
+
+## To Do
+
+- [ ] Manipulate sources files
+- [ ] Remove packages to make clean installation
