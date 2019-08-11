@@ -1,3 +1,9 @@
 #tools.txt
 unzip
 unrar
+
+#power management
+tlp
+tlp-rdw
+tp-smapi-dkms
+acpi-call-dkms
