@@ -18,6 +18,17 @@ nc='\033[0m'
 
 # === Functions ===
 
+function checkpoint(){
+	read -p "Are you sure ? [Y/n]" -n 1 -r
+	[[ $REPLY =~ ^[Yy]$ ]] || end
+}
+
+function end(){
+	# delete file all (owner is root)
+	rm $path/all.txt
+	exit 1
+}
+
 # load group's files
 function load(){
 	# load files in directory
@@ -58,6 +69,8 @@ function ask(){
 	fi
 
 	echo "${softwares[@]}"
+	checkpoint
+
 	apt install ${softwares[@]}
 }
 
@@ -69,8 +82,8 @@ echo "$(whoami)"
 [ "$EUID" -eq 0 ] || exec sudo "$0" "$@"
 
 # Check the repository sources files in '/etc/apt/sources.list'
-echo ""
 echo -e "${green}[repository]${nc} Please check the apt repository"
+checkpoint
 
 load
 
@@ -83,7 +96,4 @@ apt -yq upgrade >> /dev/null
 
 ask
 
-# delete file all (owner is root)
-rm $path/all.txt
-
-exit
+end
