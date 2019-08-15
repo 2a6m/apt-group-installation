@@ -5,6 +5,7 @@ mcomix
 gimp
 mupdf
 firefox-esr
+libreoffice
 
 # video player
 vlc

@@ -1,4 +1,15 @@
 #tools.txt
 # package group to complete the commmand line user interface 
 
+# shell
+zsh
+zsh-doc
+
 vim
+ranger
+
+wget
+ntfs-3g
+
+# if wificard support by iwlwifi
+firmware-iwlwifi

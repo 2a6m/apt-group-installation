@@ -9,5 +9,5 @@ i3
 i3lock
 suckless-tools
 
-# desktop environnement
-mate-desktop-environment-core
+# dependencies to rice i3
+fonts-font-awesome
