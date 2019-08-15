@@ -1,9 +1,4 @@
 #tools.txt
-unzip
-unrar
+# package group to complete the commmand line user interface 
 
-#power management
-tlp
-tlp-rdw
-tp-smapi-dkms
-acpi-call-dkms
+vim

@@ -1,2 +1,13 @@
-#system.txt
+#system
+# package group to complete the minimal installation, to have a functionnaly user os
+
 sudo
+
+unrar
+unzip
+
+#power management
+tlp
+tlp-rdw
+tp-smapi-dkms
+acpi-call-dkms

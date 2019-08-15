@@ -1,4 +1,15 @@
-#app	
-vlc
+#app
+# package group for application in a gui system
+	
 mcomix
 gimp
+mupdf
+firefox-esr
+
+# video player
+vlc
+mpva
+
+# add repository to apt sources
+#spotify
+#atom

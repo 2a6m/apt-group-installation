@@ -1,0 +1,9 @@
+#gui-tools
+# package group to complete the graphical installation
+
+# application menu
+rofi
+
+# notifycation
+dunst
+libnotify-bin

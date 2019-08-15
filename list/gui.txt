@@ -1,2 +1,13 @@
-#gui.txt
+#gui
+# package group to install a functionnal graphic interface
+
 xorg
+xorg-docs
+
+# window manager
+i3
+i3lock
+suckless-tools
+
+# desktop environnement
+mate-desktop-environment-core
