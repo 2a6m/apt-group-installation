@@ -8,6 +8,4 @@ xorg-docs
 i3
 i3lock
 suckless-tools
-
-# dependencies to rice i3
-fonts-font-awesome
+i3blocks

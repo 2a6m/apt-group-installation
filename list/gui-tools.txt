@@ -1,9 +1,14 @@
 #gui-tools
 # package group to complete the graphical installation
 
-# application menu
 rofi
+wicd
 
-# notifycation
+# notification
 dunst
 libnotify-bin
+
+# dependencies to rice i3
+fonts-font-axesome
+# alsa # need find real name
+xbacklight

@@ -1,5 +1,5 @@
 #tools.txt
-# package group to complete the commmand line user interface 
+# package group to complete the commmand line user interface
 
 # shell
 zsh
@@ -7,6 +7,7 @@ zsh-doc
 
 vim
 ranger
+w3m
 
 wget
 ntfs-3g
